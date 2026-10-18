@@ -12,8 +12,10 @@ feed uses ETag conditional writes. Storage is private for fresh origin reads; th
 API exposes only the validated K-pop packet. Failed/blocked capture attempts preserve
 all complete saved editions.
 
-Status: receiver prepared and13 tests passing. A one-time dedicated storage connection
-is awaiting specific approval. No unattended schedule is active yet. The earlier browser
+Status: isolated private storage connected with explicit user approval. First signed
+Muse delivery is visible through fresh GET; the frozen complete edition is unchanged.
+The 160/165 verification attempt is blocked/incomplete. Exact replay and a run through
+the saved Saturday07:00 America/Los_Angeles cloud schedule are being verified. The earlier browser
 artifact relay is retired: Muse requires a new human Share approval for every public
 artifact version. Its manual probe workflow is retained only as an evidence check and
 has no schedule. No live Hyperidol domain or Telegram publication is included here.
@@ -22,3 +24,8 @@ has no schedule. No live Hyperidol domain or Telegram publication is included he
 editions, size bounds, CAS conflicts and storage failure. Source acquisition must stop
 on checkpoints, incomplete country positions, mixed dates or unresolved identity. Never
 bypass a source restriction or retry through alternate identities.
+
+The hosted `/` review desk and `/chart.html` are read-only previews. Chart data loads
+from this same service. Review selections persist only in that browser and generate
+a request for review, never deployment approval or a live write. Chart source and
+validation are pinned to Hyperidol5676f96; provenance is in site/PROVENANCE.txt.

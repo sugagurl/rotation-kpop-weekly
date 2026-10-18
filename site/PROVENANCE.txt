@@ -1,0 +1,1 @@
+Read-only preview adapted from sugagurl/hyperidol-r3 source 5676f96393905c5945a4172920d9a91dc29fb2f5. Shared chart and validation copied unchanged. Only the API adapter differs: same-origin public filtered archive GET; no login, database, write or deployment route. Review choices are browser-local drafts, never publication approval.

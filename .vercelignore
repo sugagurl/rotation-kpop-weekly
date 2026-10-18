@@ -7,3 +7,4 @@ proof/
 source-access.mjs
 probe.mjs
 relay.mjs
+site/*.test.mjs

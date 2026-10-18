@@ -4,3 +4,4 @@ proof/
 .vercel/
 .env*
 .vercel
+public/assets/

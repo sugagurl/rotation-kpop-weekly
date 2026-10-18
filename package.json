@@ -5,15 +5,19 @@
   "scripts": {
     "probe": "node probe.mjs",
     "relay": "node relay.mjs",
-    "test": "node --test archive.test.mjs receiver.test.mjs"
+    "test": "node --test archive.test.mjs receiver.test.mjs site/status.test.mjs",
+    "build": "node site/build.mjs"
   },
   "dependencies": {
     "@vercel/blob": "2.8.2",
     "playwright": "1.61.1",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "zod": "4.4.3"
   },
   "devDependencies": {
     "@types/node": "24.13.6",
+    "esbuild": "0.28.2",
     "typescript": "5.9.3"
   }
 }
