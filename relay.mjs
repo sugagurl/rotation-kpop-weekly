@@ -9,7 +9,7 @@ try{
  const raw=await block.textContent();if(!raw||Buffer.byteLength(raw)>4*1024*1024)throw Error('INVALID_FEED_SIZE');
  const prior=JSON.parse(await readFile('feed.json','utf8'));const next=mergePacket(prior,raw);const manifest={};
  // Validate ALL old files before publishing any addition. Never replace a dated edition.
- for(const week of next.weeks){const path='weeks/'+week.edition_date+'.json';let existing;try{existing=await readFile(path,'utf8');}catch(e){if(e.code!=='ENOENT')throw e;}if(existing&&hash(JSON.parse(existing))!==hash(week))throw Error('ARCHIVE_FILE_CONFLICT');manifest[week.edition_date]=hash(week);}
+ for(const week of next.weeks){const path='weeks/'+week.edition_date+'.json';let existing;try{existing=await readFile(path,'utf8');}catch(e){if(e.code!=='ENOENT')throw e;}if(existing!==undefined&&hash(JSON.parse(existing))!==hash(week))throw Error('ARCHIVE_FILE_CONFLICT');manifest[week.edition_date]=hash(week);}
  await mkdir('weeks',{recursive:true});for(const week of next.weeks){try{await writeFile('weeks/'+week.edition_date+'.json',JSON.stringify(week)+'\n',{flag:'wx'});}catch(e){if(e.code!=='EEXIST')throw e;}}
  await writeFile('hashes.json',JSON.stringify(manifest,null,2)+'\n');
  await writeFile('feed.json.tmp',JSON.stringify(next,null,2)+'\n');await rename('feed.json.tmp','feed.json');

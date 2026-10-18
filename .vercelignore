@@ -1,0 +1,9 @@
+.env*
+.git/
+node_modules/
+proof/
+.github/
+*.test.mjs
+source-access.mjs
+probe.mjs
+relay.mjs

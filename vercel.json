@@ -1,0 +1,1 @@
+{"framework":null,"buildCommand":"mkdir -p public","outputDirectory":"public","functions":{"api/archive.ts":{"maxDuration":60,"includeFiles":"producer-public-key.pem"}}}

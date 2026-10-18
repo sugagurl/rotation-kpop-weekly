@@ -5,10 +5,11 @@
   "scripts": {
     "probe": "node probe.mjs",
     "relay": "node relay.mjs",
-    "test": "node --test archive.test.mjs"
+    "test": "node --test archive.test.mjs receiver.test.mjs"
   },
   "dependencies": {
     "playwright": "1.61.1",
-    "zod": "4.4.3"
+    "zod": "4.4.3",
+    "@vercel/blob": "2.8.2"
   }
 }
