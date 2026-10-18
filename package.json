@@ -5,7 +5,7 @@
   "scripts": {
     "probe": "node probe.mjs",
     "relay": "node relay.mjs",
-    "test": "node --test archive.test.mjs receiver.test.mjs evidence.test.mjs site/status.test.mjs",
+    "test": "node --test archive.test.mjs receiver.test.mjs evidence.test.mjs blob-version.test.mjs site/status.test.mjs",
     "build": "node site/build.mjs"
   },
   "dependencies": {

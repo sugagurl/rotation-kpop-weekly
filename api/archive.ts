@@ -1,10 +1,12 @@
-import {get,put} from '@vercel/blob';
+import {get,put,head} from '@vercel/blob';
+import {privateJsonReader} from '../blob-version.mjs';
 import {readFileSync} from 'node:fs';
 import {makeReceiver} from '../receiver.mjs';
 import {hash} from '../archive.mjs';
 import seed from '../feed.json' with {type:'json'};
 const publicKey=readFileSync(new URL('../producer-public-key.pem',import.meta.url),'utf8');
-async function read(path:string){if(!process.env.BLOB_STORE_ID&&!process.env.BLOB_READ_WRITE_TOKEN)return null;const result=await get(path,{access:'private',useCache:false});if(!result||result.statusCode!==200)return null;const text=await new Response(result.stream).text();return {packet:JSON.parse(text),etag:result.blob.etag};}
+const reader=privateJsonReader({get,head,available:!!(process.env.BLOB_STORE_ID||process.env.BLOB_READ_WRITE_TOKEN)});
+async function read(path:string){const result=await reader(path,{versioned:path==='feed.json'});return result?{packet:result.value,etag:result.etag}:null;}
 const store={
  available:!!(process.env.BLOB_STORE_ID||process.env.BLOB_READ_WRITE_TOKEN),
  load:()=>read('feed.json'),
