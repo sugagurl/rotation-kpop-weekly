@@ -1,1 +1,14 @@
-{"name":"rotation-kpop-weekly","private":true,"type":"module","scripts":{"probe":"node probe.mjs"},"dependencies":{"playwright":"1.61.1"}}
+{
+  "name": "rotation-kpop-weekly",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "probe": "node probe.mjs",
+    "relay": "node relay.mjs",
+    "test": "node --test archive.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.61.1",
+    "zod": "4.4.3"
+  }
+}

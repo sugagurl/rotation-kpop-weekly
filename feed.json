@@ -1,0 +1,2422 @@
+{
+  "schema_version": 1,
+  "producer": "muse-rotation-weekly",
+  "latest_complete": {
+    "schema_version": 1,
+    "edition_date": "2026-10-17",
+    "source_date": "2026-10-17",
+    "captured_at": "2026-10-18T04:14:17.693825Z",
+    "capture_kind": "weekly_snapshot",
+    "coverage": {
+      "surface": "rotation_country_top20",
+      "expected_countries": [
+        "ae",
+        "am",
+        "ao",
+        "ar",
+        "at",
+        "au",
+        "az",
+        "ba",
+        "be",
+        "bg",
+        "bj",
+        "bo",
+        "br",
+        "bs",
+        "bt",
+        "bw",
+        "by",
+        "bz",
+        "ca",
+        "cd",
+        "cg",
+        "ch",
+        "ci",
+        "cl",
+        "cm",
+        "cn",
+        "co",
+        "cr",
+        "cy",
+        "cz",
+        "de",
+        "dk",
+        "do",
+        "dz",
+        "ec",
+        "ee",
+        "eg",
+        "es",
+        "fi",
+        "fj",
+        "fr",
+        "ga",
+        "gb",
+        "ge",
+        "gh",
+        "gm",
+        "gr",
+        "gt",
+        "gw",
+        "gy",
+        "hn",
+        "hr",
+        "hu",
+        "id",
+        "ie",
+        "il",
+        "in",
+        "iq",
+        "is",
+        "it",
+        "jm",
+        "jo",
+        "jp",
+        "ke",
+        "kg",
+        "kh",
+        "kr",
+        "kw",
+        "kz",
+        "la",
+        "lb",
+        "lk",
+        "lr",
+        "lt",
+        "lu",
+        "lv",
+        "ly",
+        "ma",
+        "md",
+        "me",
+        "mg",
+        "mk",
+        "ml",
+        "mm",
+        "mn",
+        "mr",
+        "mw",
+        "mx",
+        "my",
+        "mz",
+        "na",
+        "ne",
+        "ng",
+        "ni",
+        "nl",
+        "no",
+        "np",
+        "nz",
+        "om",
+        "pa",
+        "pe",
+        "pg",
+        "ph",
+        "pk",
+        "pl",
+        "pt",
+        "py",
+        "qa",
+        "ro",
+        "rs",
+        "ru",
+        "rw",
+        "sa",
+        "sb",
+        "se",
+        "si",
+        "sk",
+        "sl",
+        "sn",
+        "sr",
+        "sv",
+        "sz",
+        "td",
+        "th",
+        "tj",
+        "tm",
+        "tn",
+        "tr",
+        "tt",
+        "tw",
+        "tz",
+        "ua",
+        "ug",
+        "us",
+        "uy",
+        "uz",
+        "ve",
+        "vn",
+        "ye",
+        "za",
+        "zm",
+        "zw",
+        "ag",
+        "ai",
+        "bb",
+        "bh",
+        "bm",
+        "cv",
+        "dm",
+        "fm",
+        "gd",
+        "hk",
+        "kn",
+        "ky",
+        "lc",
+        "mo",
+        "ms",
+        "mt",
+        "mu",
+        "mv",
+        "sc",
+        "sg",
+        "tc",
+        "vc",
+        "vg"
+      ],
+      "captured_countries": [
+        "ae",
+        "am",
+        "ao",
+        "ar",
+        "at",
+        "au",
+        "az",
+        "ba",
+        "be",
+        "bg",
+        "bj",
+        "bo",
+        "br",
+        "bs",
+        "bt",
+        "bw",
+        "by",
+        "bz",
+        "ca",
+        "cd",
+        "cg",
+        "ch",
+        "ci",
+        "cl",
+        "cm",
+        "cn",
+        "co",
+        "cr",
+        "cy",
+        "cz",
+        "de",
+        "dk",
+        "do",
+        "dz",
+        "ec",
+        "ee",
+        "eg",
+        "es",
+        "fi",
+        "fj",
+        "fr",
+        "ga",
+        "gb",
+        "ge",
+        "gh",
+        "gm",
+        "gr",
+        "gt",
+        "gw",
+        "gy",
+        "hn",
+        "hr",
+        "hu",
+        "id",
+        "ie",
+        "il",
+        "in",
+        "iq",
+        "is",
+        "it",
+        "jm",
+        "jo",
+        "jp",
+        "ke",
+        "kg",
+        "kh",
+        "kr",
+        "kw",
+        "kz",
+        "la",
+        "lb",
+        "lk",
+        "lr",
+        "lt",
+        "lu",
+        "lv",
+        "ly",
+        "ma",
+        "md",
+        "me",
+        "mg",
+        "mk",
+        "ml",
+        "mm",
+        "mn",
+        "mr",
+        "mw",
+        "mx",
+        "my",
+        "mz",
+        "na",
+        "ne",
+        "ng",
+        "ni",
+        "nl",
+        "no",
+        "np",
+        "nz",
+        "om",
+        "pa",
+        "pe",
+        "pg",
+        "ph",
+        "pk",
+        "pl",
+        "pt",
+        "py",
+        "qa",
+        "ro",
+        "rs",
+        "ru",
+        "rw",
+        "sa",
+        "sb",
+        "se",
+        "si",
+        "sk",
+        "sl",
+        "sn",
+        "sr",
+        "sv",
+        "sz",
+        "td",
+        "th",
+        "tj",
+        "tm",
+        "tn",
+        "tr",
+        "tt",
+        "tw",
+        "tz",
+        "ua",
+        "ug",
+        "us",
+        "uy",
+        "uz",
+        "ve",
+        "vn",
+        "ye",
+        "za",
+        "zm",
+        "zw",
+        "ag",
+        "ai",
+        "bb",
+        "bh",
+        "bm",
+        "cv",
+        "dm",
+        "fm",
+        "gd",
+        "hk",
+        "kn",
+        "ky",
+        "lc",
+        "mo",
+        "ms",
+        "mt",
+        "mu",
+        "mv",
+        "sc",
+        "sg",
+        "tc",
+        "vc",
+        "vg"
+      ],
+      "status": "complete",
+      "classification_version": "kpop-credits-2026-10-17-v1",
+      "classification_status": "reviewed"
+    },
+    "artists": [
+      {
+        "id": "allday-project",
+        "name": "ALLDAY PROJECT",
+        "roster_id": null,
+        "evidence_url": "https://theblacklabel.com/"
+      },
+      {
+        "id": "ateez",
+        "name": "ATEEZ",
+        "roster_id": null,
+        "evidence_url": "https://ateez.kqent.com/"
+      },
+      {
+        "id": "babymonster",
+        "name": "BABYMONSTER",
+        "roster_id": null,
+        "evidence_url": "https://yg-babymonster-official.jp/"
+      },
+      {
+        "id": "bestie",
+        "name": "BESTie",
+        "roster_id": null,
+        "evidence_url": "https://rotation.today/song/bestie__love-options"
+      },
+      {
+        "id": "bts",
+        "name": "BTS",
+        "roster_id": null,
+        "evidence_url": "https://bts.ibighit.com/eng/profile/"
+      },
+      {
+        "id": "cortis",
+        "name": "CORTIS",
+        "roster_id": null,
+        "evidence_url": "https://ibighit.com/legacy/cortis/color-outside-the-lines-en.html"
+      },
+      {
+        "id": "illit",
+        "name": "ILLIT",
+        "roster_id": null,
+        "evidence_url": "https://beliftlab.com/artist/profile/ILLIT"
+      },
+      {
+        "id": "jennie",
+        "name": "JENNIE",
+        "roster_id": "blackpink-jennie",
+        "evidence_url": "https://www.jenn.ie/"
+      },
+      {
+        "id": "jimin",
+        "name": "Jimin",
+        "roster_id": "bts-jimin",
+        "evidence_url": "https://bts.ibighit.com/eng/profile/"
+      },
+      {
+        "id": "jin",
+        "name": "Jin",
+        "roster_id": "bts-jin",
+        "evidence_url": "https://bts.ibighit.com/eng/profile/"
+      },
+      {
+        "id": "jungkook",
+        "name": "Jung Kook",
+        "roster_id": "bts-jungkook",
+        "evidence_url": "https://bts.ibighit.com/eng/profile/"
+      },
+      {
+        "id": "juniel",
+        "name": "Juniel",
+        "roster_id": null,
+        "evidence_url": "https://rotation.today/song/juniel__illa-illa"
+      },
+      {
+        "id": "nct-wish",
+        "name": "NCT WISH",
+        "roster_id": null,
+        "evidence_url": "https://nct-wish.jp/"
+      },
+      {
+        "id": "plave",
+        "name": "PLAVE",
+        "roster_id": null,
+        "evidence_url": "https://www.plave-official.com/"
+      },
+      {
+        "id": "rescene",
+        "name": "RESCENE",
+        "roster_id": null,
+        "evidence_url": "https://www.rescene-official.com/"
+      },
+      {
+        "id": "soyeon",
+        "name": "SOYEON",
+        "roster_id": "i-dle-soyeon",
+        "evidence_url": "https://www.youtube.com/watch?v=OOvyHpNmGD8"
+      },
+      {
+        "id": "v",
+        "name": "V",
+        "roster_id": "bts-v",
+        "evidence_url": "https://bts.ibighit.com/kor/discography/v/"
+      }
+    ],
+    "songs": [
+      {
+        "id": "jung-kook__seven",
+        "title": "Seven",
+        "credits": "Jung Kook",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook__seven"
+      },
+      {
+        "id": "bts__please",
+        "title": "Please",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__please"
+      },
+      {
+        "id": "v__winter-ahead-with-park-hyo-shin",
+        "title": "Winter Ahead (with PARK HYO SHIN)",
+        "credits": "V",
+        "artist_ids": [
+          "v"
+        ],
+        "source_url": "https://rotation.today/song/v__winter-ahead-with-park-hyo-shin"
+      },
+      {
+        "id": "bts__normal-korean-ver",
+        "title": "NORMAL (Korean Ver.)",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__normal-korean-ver"
+      },
+      {
+        "id": "bts__swim",
+        "title": "SWIM",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__swim"
+      },
+      {
+        "id": "bts__normal",
+        "title": "NORMAL",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__normal"
+      },
+      {
+        "id": "v__winter-ahead",
+        "title": "Winter Ahead",
+        "credits": "V",
+        "artist_ids": [
+          "v"
+        ],
+        "source_url": "https://rotation.today/song/v__winter-ahead"
+      },
+      {
+        "id": "jimin__who",
+        "title": "Who",
+        "credits": "Jimin",
+        "artist_ids": [
+          "jimin"
+        ],
+        "source_url": "https://rotation.today/song/jimin__who"
+      },
+      {
+        "id": "jimin__be-mine",
+        "title": "Be Mine",
+        "credits": "Jimin",
+        "artist_ids": [
+          "jimin"
+        ],
+        "source_url": "https://rotation.today/song/jimin__be-mine"
+      },
+      {
+        "id": "bts__come-over",
+        "title": "Come Over",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__come-over"
+      },
+      {
+        "id": "babymonster__moon",
+        "title": "MOON",
+        "credits": "BABYMONSTER",
+        "artist_ids": [
+          "babymonster"
+        ],
+        "source_url": "https://rotation.today/song/babymonster__moon"
+      },
+      {
+        "id": "bestie__love-options",
+        "title": "Love Options",
+        "credits": "BESTie",
+        "artist_ids": [
+          "bestie"
+        ],
+        "source_url": "https://rotation.today/song/bestie__love-options"
+      },
+      {
+        "id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "title": "One Of The Girls",
+        "credits": "The Weeknd, JENNIE & Lily Rose Depp",
+        "artist_ids": [
+          "jennie"
+        ],
+        "source_url": "https://rotation.today/song/the-weeknd-jennie-lily-rose-depp__one-of-the-girls"
+      },
+      {
+        "id": "jennie__less-than-a-lover",
+        "title": "Less than a Lover",
+        "credits": "JENNIE",
+        "artist_ids": [
+          "jennie"
+        ],
+        "source_url": "https://rotation.today/song/jennie__less-than-a-lover"
+      },
+      {
+        "id": "plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94",
+        "title": "이 밤을 빌려 말해요",
+        "credits": "PLAVE",
+        "artist_ids": [
+          "plave"
+        ],
+        "source_url": "https://rotation.today/song/plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94"
+      },
+      {
+        "id": "rescene__love-attack",
+        "title": "LOVE ATTACK",
+        "credits": "RESCENE",
+        "artist_ids": [
+          "rescene"
+        ],
+        "source_url": "https://rotation.today/song/rescene__love-attack"
+      },
+      {
+        "id": "allday-project__crash",
+        "title": "CRASH",
+        "credits": "ALLDAY PROJECT",
+        "artist_ids": [
+          "allday-project"
+        ],
+        "source_url": "https://rotation.today/song/allday-project__crash"
+      },
+      {
+        "id": "juniel__illa-illa",
+        "title": "illa illa",
+        "credits": "Juniel",
+        "artist_ids": [
+          "juniel"
+        ],
+        "source_url": "https://rotation.today/song/juniel__illa-illa"
+      },
+      {
+        "id": "%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884",
+        "title": "퇴사할게여 (Narr. 기안84)",
+        "credits": "소연 (SOYEON)",
+        "artist_ids": [
+          "soyeon"
+        ],
+        "source_url": "https://rotation.today/song/%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884"
+      },
+      {
+        "id": "nct-wish__i-spy",
+        "title": "I SPY",
+        "credits": "NCT WISH",
+        "artist_ids": [
+          "nct-wish"
+        ],
+        "source_url": "https://rotation.today/song/nct-wish__i-spy"
+      },
+      {
+        "id": "plave__star-trace",
+        "title": "Star Trace",
+        "credits": "PLAVE",
+        "artist_ids": [
+          "plave"
+        ],
+        "source_url": "https://rotation.today/song/plave__star-trace"
+      },
+      {
+        "id": "soyeon__i-m-gonna-toesa",
+        "title": "I’m gonna TOESA",
+        "credits": "SOYEON",
+        "artist_ids": [
+          "soyeon"
+        ],
+        "source_url": "https://rotation.today/song/soyeon__i-m-gonna-toesa"
+      },
+      {
+        "id": "jung-kook__3d",
+        "title": "3D",
+        "credits": "Jung Kook",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook__3d"
+      },
+      {
+        "id": "jung-kook__standing-next-to-you",
+        "title": "Standing Next to You",
+        "credits": "Jung Kook",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook__standing-next-to-you"
+      },
+      {
+        "id": "jung-kook-latto__seven",
+        "title": "Seven",
+        "credits": "Jung Kook & Latto",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook-latto__seven"
+      },
+      {
+        "id": "jung-kook__too-sad-to-dance",
+        "title": "Too Sad to Dance",
+        "credits": "Jung Kook",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook__too-sad-to-dance"
+      },
+      {
+        "id": "jung-kook-jack-harlow__3d",
+        "title": "3D",
+        "credits": "Jung Kook & Jack Harlow",
+        "artist_ids": [
+          "jungkook"
+        ],
+        "source_url": "https://rotation.today/song/jung-kook-jack-harlow__3d"
+      },
+      {
+        "id": "bts__we-are-bulletproof-the-eternal",
+        "title": "We are Bulletproof : The Eternal",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__we-are-bulletproof-the-eternal"
+      },
+      {
+        "id": "bts__paldogangsan",
+        "title": "Paldogangsan",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__paldogangsan"
+      },
+      {
+        "id": "bts__house-of-cards-full-length-edition",
+        "title": "House of Cards (Full Length Edition)",
+        "credits": "BTS",
+        "artist_ids": [
+          "bts"
+        ],
+        "source_url": "https://rotation.today/song/bts__house-of-cards-full-length-edition"
+      },
+      {
+        "id": "jin__don-t-say-you-love-me",
+        "title": "Don’t Say You Love Me",
+        "credits": "Jin",
+        "artist_ids": [
+          "jin"
+        ],
+        "source_url": "https://rotation.today/song/jin__don-t-say-you-love-me"
+      },
+      {
+        "id": "cortis__moneymoneymoney",
+        "title": "MONEYMONEYMONEY",
+        "credits": "CORTIS",
+        "artist_ids": [
+          "cortis"
+        ],
+        "source_url": "https://rotation.today/song/cortis__moneymoneymoney"
+      },
+      {
+        "id": "jeon-soyeon__i-m-gonna-toesa-feat-kian84",
+        "title": "I’m gonna TOESA (feat. Kian84)",
+        "credits": "JEON SOYEON",
+        "artist_ids": [
+          "soyeon"
+        ],
+        "source_url": "https://rotation.today/song/jeon-soyeon__i-m-gonna-toesa-feat-kian84"
+      },
+      {
+        "id": "ateez__bad",
+        "title": "BAD",
+        "credits": "ATEEZ",
+        "artist_ids": [
+          "ateez"
+        ],
+        "source_url": "https://rotation.today/song/ateez__bad"
+      },
+      {
+        "id": "illit__billyeoon-goyangi-do-the-dance",
+        "title": "Billyeoon Goyangi (Do the Dance)",
+        "credits": "ILLIT",
+        "artist_ids": [
+          "illit"
+        ],
+        "source_url": "https://rotation.today/song/illit__billyeoon-goyangi-do-the-dance"
+      }
+    ],
+    "entries": [
+      {
+        "song_id": "jung-kook__seven",
+        "country": "ae",
+        "position": 12,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ae"
+      },
+      {
+        "song_id": "bts__please",
+        "country": "ar",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ar"
+      },
+      {
+        "song_id": "v__winter-ahead-with-park-hyo-shin",
+        "country": "ar",
+        "position": 10,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ar"
+      },
+      {
+        "song_id": "bts__normal-korean-ver",
+        "country": "ar",
+        "position": 11,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ar"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "by",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=by"
+      },
+      {
+        "song_id": "bts__normal",
+        "country": "by",
+        "position": 4,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=by"
+      },
+      {
+        "song_id": "v__winter-ahead",
+        "country": "by",
+        "position": 6,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=by"
+      },
+      {
+        "song_id": "jimin__who",
+        "country": "by",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=by"
+      },
+      {
+        "song_id": "jimin__be-mine",
+        "country": "by",
+        "position": 11,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=by"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "cl",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cl"
+      },
+      {
+        "song_id": "bts__come-over",
+        "country": "cl",
+        "position": 12,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cl"
+      },
+      {
+        "song_id": "bts__normal-korean-ver",
+        "country": "cl",
+        "position": 19,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cl"
+      },
+      {
+        "song_id": "bts__normal",
+        "country": "cr",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cr"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "cr",
+        "position": 9,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cr"
+      },
+      {
+        "song_id": "bts__come-over",
+        "country": "cr",
+        "position": 15,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=cr"
+      },
+      {
+        "song_id": "babymonster__moon",
+        "country": "ec",
+        "position": 4,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ec"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "hn",
+        "position": 13,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=hn"
+      },
+      {
+        "song_id": "bestie__love-options",
+        "country": "jp",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=jp"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "kg",
+        "position": 10,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kg"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "kh",
+        "position": 4,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kh"
+      },
+      {
+        "song_id": "jennie__less-than-a-lover",
+        "country": "kh",
+        "position": 19,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kh"
+      },
+      {
+        "song_id": "plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94",
+        "country": "kr",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "rescene__love-attack",
+        "country": "kr",
+        "position": 8,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "allday-project__crash",
+        "country": "kr",
+        "position": 10,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "jimin__who",
+        "country": "kr",
+        "position": 11,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "juniel__illa-illa",
+        "country": "kr",
+        "position": 12,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884",
+        "country": "kr",
+        "position": 14,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "nct-wish__i-spy",
+        "country": "kr",
+        "position": 15,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "plave__star-trace",
+        "country": "kr",
+        "position": 16,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "soyeon__i-m-gonna-toesa",
+        "country": "kr",
+        "position": 20,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=kr"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "la",
+        "position": 4,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=la"
+      },
+      {
+        "song_id": "jung-kook__seven",
+        "country": "lu",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=lu"
+      },
+      {
+        "song_id": "jung-kook__3d",
+        "country": "lu",
+        "position": 3,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=lu"
+      },
+      {
+        "song_id": "jung-kook__standing-next-to-you",
+        "country": "lu",
+        "position": 5,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=lu"
+      },
+      {
+        "song_id": "jung-kook-latto__seven",
+        "country": "mm",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=mm"
+      },
+      {
+        "song_id": "jung-kook__too-sad-to-dance",
+        "country": "mm",
+        "position": 9,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=mm"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "mm",
+        "position": 13,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=mm"
+      },
+      {
+        "song_id": "jung-kook-jack-harlow__3d",
+        "country": "mm",
+        "position": 17,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=mm"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "mn",
+        "position": 5,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=mn"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "np",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=np"
+      },
+      {
+        "song_id": "bts__normal",
+        "country": "np",
+        "position": 2,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=np"
+      },
+      {
+        "song_id": "bts__come-over",
+        "country": "np",
+        "position": 13,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=np"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "pa",
+        "position": 17,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=pa"
+      },
+      {
+        "song_id": "bts__we-are-bulletproof-the-eternal",
+        "country": "pe",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=pe"
+      },
+      {
+        "song_id": "bts__paldogangsan",
+        "country": "pe",
+        "position": 7,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=pe"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "pe",
+        "position": 11,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=pe"
+      },
+      {
+        "song_id": "bts__house-of-cards-full-length-edition",
+        "country": "pe",
+        "position": 14,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=pe"
+      },
+      {
+        "song_id": "jin__don-t-say-you-love-me",
+        "country": "ph",
+        "position": 5,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ph"
+      },
+      {
+        "song_id": "cortis__moneymoneymoney",
+        "country": "sa",
+        "position": 20,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=sa"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "sz",
+        "position": 19,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=sz"
+      },
+      {
+        "song_id": "bestie__love-options",
+        "country": "th",
+        "position": 14,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=th"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "th",
+        "position": 20,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=th"
+      },
+      {
+        "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+        "country": "tj",
+        "position": 20,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=tj"
+      },
+      {
+        "song_id": "jeon-soyeon__i-m-gonna-toesa-feat-kian84",
+        "country": "tw",
+        "position": 5,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=tw"
+      },
+      {
+        "song_id": "ateez__bad",
+        "country": "tw",
+        "position": 13,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=tw"
+      },
+      {
+        "song_id": "soyeon__i-m-gonna-toesa",
+        "country": "tw",
+        "position": 17,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=tw"
+      },
+      {
+        "song_id": "allday-project__crash",
+        "country": "tw",
+        "position": 19,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=tw"
+      },
+      {
+        "song_id": "bts__swim",
+        "country": "ve",
+        "position": 1,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ve"
+      },
+      {
+        "song_id": "bts__normal",
+        "country": "ve",
+        "position": 12,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ve"
+      },
+      {
+        "song_id": "bestie__love-options",
+        "country": "vn",
+        "position": 4,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=vn"
+      },
+      {
+        "song_id": "jung-kook__seven",
+        "country": "vn",
+        "position": 13,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=vn"
+      },
+      {
+        "song_id": "illit__billyeoon-goyangi-do-the-dance",
+        "country": "ai",
+        "position": 10,
+        "source_date": "2026-10-17",
+        "source_url": "https://rotation.today/map?market=ai"
+      }
+    ]
+  },
+  "weeks": [
+    {
+      "schema_version": 1,
+      "edition_date": "2026-10-17",
+      "source_date": "2026-10-17",
+      "captured_at": "2026-10-18T04:14:17.693825Z",
+      "capture_kind": "weekly_snapshot",
+      "coverage": {
+        "surface": "rotation_country_top20",
+        "expected_countries": [
+          "ae",
+          "am",
+          "ao",
+          "ar",
+          "at",
+          "au",
+          "az",
+          "ba",
+          "be",
+          "bg",
+          "bj",
+          "bo",
+          "br",
+          "bs",
+          "bt",
+          "bw",
+          "by",
+          "bz",
+          "ca",
+          "cd",
+          "cg",
+          "ch",
+          "ci",
+          "cl",
+          "cm",
+          "cn",
+          "co",
+          "cr",
+          "cy",
+          "cz",
+          "de",
+          "dk",
+          "do",
+          "dz",
+          "ec",
+          "ee",
+          "eg",
+          "es",
+          "fi",
+          "fj",
+          "fr",
+          "ga",
+          "gb",
+          "ge",
+          "gh",
+          "gm",
+          "gr",
+          "gt",
+          "gw",
+          "gy",
+          "hn",
+          "hr",
+          "hu",
+          "id",
+          "ie",
+          "il",
+          "in",
+          "iq",
+          "is",
+          "it",
+          "jm",
+          "jo",
+          "jp",
+          "ke",
+          "kg",
+          "kh",
+          "kr",
+          "kw",
+          "kz",
+          "la",
+          "lb",
+          "lk",
+          "lr",
+          "lt",
+          "lu",
+          "lv",
+          "ly",
+          "ma",
+          "md",
+          "me",
+          "mg",
+          "mk",
+          "ml",
+          "mm",
+          "mn",
+          "mr",
+          "mw",
+          "mx",
+          "my",
+          "mz",
+          "na",
+          "ne",
+          "ng",
+          "ni",
+          "nl",
+          "no",
+          "np",
+          "nz",
+          "om",
+          "pa",
+          "pe",
+          "pg",
+          "ph",
+          "pk",
+          "pl",
+          "pt",
+          "py",
+          "qa",
+          "ro",
+          "rs",
+          "ru",
+          "rw",
+          "sa",
+          "sb",
+          "se",
+          "si",
+          "sk",
+          "sl",
+          "sn",
+          "sr",
+          "sv",
+          "sz",
+          "td",
+          "th",
+          "tj",
+          "tm",
+          "tn",
+          "tr",
+          "tt",
+          "tw",
+          "tz",
+          "ua",
+          "ug",
+          "us",
+          "uy",
+          "uz",
+          "ve",
+          "vn",
+          "ye",
+          "za",
+          "zm",
+          "zw",
+          "ag",
+          "ai",
+          "bb",
+          "bh",
+          "bm",
+          "cv",
+          "dm",
+          "fm",
+          "gd",
+          "hk",
+          "kn",
+          "ky",
+          "lc",
+          "mo",
+          "ms",
+          "mt",
+          "mu",
+          "mv",
+          "sc",
+          "sg",
+          "tc",
+          "vc",
+          "vg"
+        ],
+        "captured_countries": [
+          "ae",
+          "am",
+          "ao",
+          "ar",
+          "at",
+          "au",
+          "az",
+          "ba",
+          "be",
+          "bg",
+          "bj",
+          "bo",
+          "br",
+          "bs",
+          "bt",
+          "bw",
+          "by",
+          "bz",
+          "ca",
+          "cd",
+          "cg",
+          "ch",
+          "ci",
+          "cl",
+          "cm",
+          "cn",
+          "co",
+          "cr",
+          "cy",
+          "cz",
+          "de",
+          "dk",
+          "do",
+          "dz",
+          "ec",
+          "ee",
+          "eg",
+          "es",
+          "fi",
+          "fj",
+          "fr",
+          "ga",
+          "gb",
+          "ge",
+          "gh",
+          "gm",
+          "gr",
+          "gt",
+          "gw",
+          "gy",
+          "hn",
+          "hr",
+          "hu",
+          "id",
+          "ie",
+          "il",
+          "in",
+          "iq",
+          "is",
+          "it",
+          "jm",
+          "jo",
+          "jp",
+          "ke",
+          "kg",
+          "kh",
+          "kr",
+          "kw",
+          "kz",
+          "la",
+          "lb",
+          "lk",
+          "lr",
+          "lt",
+          "lu",
+          "lv",
+          "ly",
+          "ma",
+          "md",
+          "me",
+          "mg",
+          "mk",
+          "ml",
+          "mm",
+          "mn",
+          "mr",
+          "mw",
+          "mx",
+          "my",
+          "mz",
+          "na",
+          "ne",
+          "ng",
+          "ni",
+          "nl",
+          "no",
+          "np",
+          "nz",
+          "om",
+          "pa",
+          "pe",
+          "pg",
+          "ph",
+          "pk",
+          "pl",
+          "pt",
+          "py",
+          "qa",
+          "ro",
+          "rs",
+          "ru",
+          "rw",
+          "sa",
+          "sb",
+          "se",
+          "si",
+          "sk",
+          "sl",
+          "sn",
+          "sr",
+          "sv",
+          "sz",
+          "td",
+          "th",
+          "tj",
+          "tm",
+          "tn",
+          "tr",
+          "tt",
+          "tw",
+          "tz",
+          "ua",
+          "ug",
+          "us",
+          "uy",
+          "uz",
+          "ve",
+          "vn",
+          "ye",
+          "za",
+          "zm",
+          "zw",
+          "ag",
+          "ai",
+          "bb",
+          "bh",
+          "bm",
+          "cv",
+          "dm",
+          "fm",
+          "gd",
+          "hk",
+          "kn",
+          "ky",
+          "lc",
+          "mo",
+          "ms",
+          "mt",
+          "mu",
+          "mv",
+          "sc",
+          "sg",
+          "tc",
+          "vc",
+          "vg"
+        ],
+        "status": "complete",
+        "classification_version": "kpop-credits-2026-10-17-v1",
+        "classification_status": "reviewed"
+      },
+      "artists": [
+        {
+          "id": "allday-project",
+          "name": "ALLDAY PROJECT",
+          "roster_id": null,
+          "evidence_url": "https://theblacklabel.com/"
+        },
+        {
+          "id": "ateez",
+          "name": "ATEEZ",
+          "roster_id": null,
+          "evidence_url": "https://ateez.kqent.com/"
+        },
+        {
+          "id": "babymonster",
+          "name": "BABYMONSTER",
+          "roster_id": null,
+          "evidence_url": "https://yg-babymonster-official.jp/"
+        },
+        {
+          "id": "bestie",
+          "name": "BESTie",
+          "roster_id": null,
+          "evidence_url": "https://rotation.today/song/bestie__love-options"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "roster_id": null,
+          "evidence_url": "https://bts.ibighit.com/eng/profile/"
+        },
+        {
+          "id": "cortis",
+          "name": "CORTIS",
+          "roster_id": null,
+          "evidence_url": "https://ibighit.com/legacy/cortis/color-outside-the-lines-en.html"
+        },
+        {
+          "id": "illit",
+          "name": "ILLIT",
+          "roster_id": null,
+          "evidence_url": "https://beliftlab.com/artist/profile/ILLIT"
+        },
+        {
+          "id": "jennie",
+          "name": "JENNIE",
+          "roster_id": "blackpink-jennie",
+          "evidence_url": "https://www.jenn.ie/"
+        },
+        {
+          "id": "jimin",
+          "name": "Jimin",
+          "roster_id": "bts-jimin",
+          "evidence_url": "https://bts.ibighit.com/eng/profile/"
+        },
+        {
+          "id": "jin",
+          "name": "Jin",
+          "roster_id": "bts-jin",
+          "evidence_url": "https://bts.ibighit.com/eng/profile/"
+        },
+        {
+          "id": "jungkook",
+          "name": "Jung Kook",
+          "roster_id": "bts-jungkook",
+          "evidence_url": "https://bts.ibighit.com/eng/profile/"
+        },
+        {
+          "id": "juniel",
+          "name": "Juniel",
+          "roster_id": null,
+          "evidence_url": "https://rotation.today/song/juniel__illa-illa"
+        },
+        {
+          "id": "nct-wish",
+          "name": "NCT WISH",
+          "roster_id": null,
+          "evidence_url": "https://nct-wish.jp/"
+        },
+        {
+          "id": "plave",
+          "name": "PLAVE",
+          "roster_id": null,
+          "evidence_url": "https://www.plave-official.com/"
+        },
+        {
+          "id": "rescene",
+          "name": "RESCENE",
+          "roster_id": null,
+          "evidence_url": "https://www.rescene-official.com/"
+        },
+        {
+          "id": "soyeon",
+          "name": "SOYEON",
+          "roster_id": "i-dle-soyeon",
+          "evidence_url": "https://www.youtube.com/watch?v=OOvyHpNmGD8"
+        },
+        {
+          "id": "v",
+          "name": "V",
+          "roster_id": "bts-v",
+          "evidence_url": "https://bts.ibighit.com/kor/discography/v/"
+        }
+      ],
+      "songs": [
+        {
+          "id": "jung-kook__seven",
+          "title": "Seven",
+          "credits": "Jung Kook",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook__seven"
+        },
+        {
+          "id": "bts__please",
+          "title": "Please",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__please"
+        },
+        {
+          "id": "v__winter-ahead-with-park-hyo-shin",
+          "title": "Winter Ahead (with PARK HYO SHIN)",
+          "credits": "V",
+          "artist_ids": [
+            "v"
+          ],
+          "source_url": "https://rotation.today/song/v__winter-ahead-with-park-hyo-shin"
+        },
+        {
+          "id": "bts__normal-korean-ver",
+          "title": "NORMAL (Korean Ver.)",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__normal-korean-ver"
+        },
+        {
+          "id": "bts__swim",
+          "title": "SWIM",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__swim"
+        },
+        {
+          "id": "bts__normal",
+          "title": "NORMAL",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__normal"
+        },
+        {
+          "id": "v__winter-ahead",
+          "title": "Winter Ahead",
+          "credits": "V",
+          "artist_ids": [
+            "v"
+          ],
+          "source_url": "https://rotation.today/song/v__winter-ahead"
+        },
+        {
+          "id": "jimin__who",
+          "title": "Who",
+          "credits": "Jimin",
+          "artist_ids": [
+            "jimin"
+          ],
+          "source_url": "https://rotation.today/song/jimin__who"
+        },
+        {
+          "id": "jimin__be-mine",
+          "title": "Be Mine",
+          "credits": "Jimin",
+          "artist_ids": [
+            "jimin"
+          ],
+          "source_url": "https://rotation.today/song/jimin__be-mine"
+        },
+        {
+          "id": "bts__come-over",
+          "title": "Come Over",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__come-over"
+        },
+        {
+          "id": "babymonster__moon",
+          "title": "MOON",
+          "credits": "BABYMONSTER",
+          "artist_ids": [
+            "babymonster"
+          ],
+          "source_url": "https://rotation.today/song/babymonster__moon"
+        },
+        {
+          "id": "bestie__love-options",
+          "title": "Love Options",
+          "credits": "BESTie",
+          "artist_ids": [
+            "bestie"
+          ],
+          "source_url": "https://rotation.today/song/bestie__love-options"
+        },
+        {
+          "id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "title": "One Of The Girls",
+          "credits": "The Weeknd, JENNIE & Lily Rose Depp",
+          "artist_ids": [
+            "jennie"
+          ],
+          "source_url": "https://rotation.today/song/the-weeknd-jennie-lily-rose-depp__one-of-the-girls"
+        },
+        {
+          "id": "jennie__less-than-a-lover",
+          "title": "Less than a Lover",
+          "credits": "JENNIE",
+          "artist_ids": [
+            "jennie"
+          ],
+          "source_url": "https://rotation.today/song/jennie__less-than-a-lover"
+        },
+        {
+          "id": "plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94",
+          "title": "이 밤을 빌려 말해요",
+          "credits": "PLAVE",
+          "artist_ids": [
+            "plave"
+          ],
+          "source_url": "https://rotation.today/song/plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94"
+        },
+        {
+          "id": "rescene__love-attack",
+          "title": "LOVE ATTACK",
+          "credits": "RESCENE",
+          "artist_ids": [
+            "rescene"
+          ],
+          "source_url": "https://rotation.today/song/rescene__love-attack"
+        },
+        {
+          "id": "allday-project__crash",
+          "title": "CRASH",
+          "credits": "ALLDAY PROJECT",
+          "artist_ids": [
+            "allday-project"
+          ],
+          "source_url": "https://rotation.today/song/allday-project__crash"
+        },
+        {
+          "id": "juniel__illa-illa",
+          "title": "illa illa",
+          "credits": "Juniel",
+          "artist_ids": [
+            "juniel"
+          ],
+          "source_url": "https://rotation.today/song/juniel__illa-illa"
+        },
+        {
+          "id": "%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884",
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "credits": "소연 (SOYEON)",
+          "artist_ids": [
+            "soyeon"
+          ],
+          "source_url": "https://rotation.today/song/%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884"
+        },
+        {
+          "id": "nct-wish__i-spy",
+          "title": "I SPY",
+          "credits": "NCT WISH",
+          "artist_ids": [
+            "nct-wish"
+          ],
+          "source_url": "https://rotation.today/song/nct-wish__i-spy"
+        },
+        {
+          "id": "plave__star-trace",
+          "title": "Star Trace",
+          "credits": "PLAVE",
+          "artist_ids": [
+            "plave"
+          ],
+          "source_url": "https://rotation.today/song/plave__star-trace"
+        },
+        {
+          "id": "soyeon__i-m-gonna-toesa",
+          "title": "I’m gonna TOESA",
+          "credits": "SOYEON",
+          "artist_ids": [
+            "soyeon"
+          ],
+          "source_url": "https://rotation.today/song/soyeon__i-m-gonna-toesa"
+        },
+        {
+          "id": "jung-kook__3d",
+          "title": "3D",
+          "credits": "Jung Kook",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook__3d"
+        },
+        {
+          "id": "jung-kook__standing-next-to-you",
+          "title": "Standing Next to You",
+          "credits": "Jung Kook",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook__standing-next-to-you"
+        },
+        {
+          "id": "jung-kook-latto__seven",
+          "title": "Seven",
+          "credits": "Jung Kook & Latto",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook-latto__seven"
+        },
+        {
+          "id": "jung-kook__too-sad-to-dance",
+          "title": "Too Sad to Dance",
+          "credits": "Jung Kook",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook__too-sad-to-dance"
+        },
+        {
+          "id": "jung-kook-jack-harlow__3d",
+          "title": "3D",
+          "credits": "Jung Kook & Jack Harlow",
+          "artist_ids": [
+            "jungkook"
+          ],
+          "source_url": "https://rotation.today/song/jung-kook-jack-harlow__3d"
+        },
+        {
+          "id": "bts__we-are-bulletproof-the-eternal",
+          "title": "We are Bulletproof : The Eternal",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__we-are-bulletproof-the-eternal"
+        },
+        {
+          "id": "bts__paldogangsan",
+          "title": "Paldogangsan",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__paldogangsan"
+        },
+        {
+          "id": "bts__house-of-cards-full-length-edition",
+          "title": "House of Cards (Full Length Edition)",
+          "credits": "BTS",
+          "artist_ids": [
+            "bts"
+          ],
+          "source_url": "https://rotation.today/song/bts__house-of-cards-full-length-edition"
+        },
+        {
+          "id": "jin__don-t-say-you-love-me",
+          "title": "Don’t Say You Love Me",
+          "credits": "Jin",
+          "artist_ids": [
+            "jin"
+          ],
+          "source_url": "https://rotation.today/song/jin__don-t-say-you-love-me"
+        },
+        {
+          "id": "cortis__moneymoneymoney",
+          "title": "MONEYMONEYMONEY",
+          "credits": "CORTIS",
+          "artist_ids": [
+            "cortis"
+          ],
+          "source_url": "https://rotation.today/song/cortis__moneymoneymoney"
+        },
+        {
+          "id": "jeon-soyeon__i-m-gonna-toesa-feat-kian84",
+          "title": "I’m gonna TOESA (feat. Kian84)",
+          "credits": "JEON SOYEON",
+          "artist_ids": [
+            "soyeon"
+          ],
+          "source_url": "https://rotation.today/song/jeon-soyeon__i-m-gonna-toesa-feat-kian84"
+        },
+        {
+          "id": "ateez__bad",
+          "title": "BAD",
+          "credits": "ATEEZ",
+          "artist_ids": [
+            "ateez"
+          ],
+          "source_url": "https://rotation.today/song/ateez__bad"
+        },
+        {
+          "id": "illit__billyeoon-goyangi-do-the-dance",
+          "title": "Billyeoon Goyangi (Do the Dance)",
+          "credits": "ILLIT",
+          "artist_ids": [
+            "illit"
+          ],
+          "source_url": "https://rotation.today/song/illit__billyeoon-goyangi-do-the-dance"
+        }
+      ],
+      "entries": [
+        {
+          "song_id": "jung-kook__seven",
+          "country": "ae",
+          "position": 12,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ae"
+        },
+        {
+          "song_id": "bts__please",
+          "country": "ar",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ar"
+        },
+        {
+          "song_id": "v__winter-ahead-with-park-hyo-shin",
+          "country": "ar",
+          "position": 10,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ar"
+        },
+        {
+          "song_id": "bts__normal-korean-ver",
+          "country": "ar",
+          "position": 11,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ar"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "by",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=by"
+        },
+        {
+          "song_id": "bts__normal",
+          "country": "by",
+          "position": 4,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=by"
+        },
+        {
+          "song_id": "v__winter-ahead",
+          "country": "by",
+          "position": 6,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=by"
+        },
+        {
+          "song_id": "jimin__who",
+          "country": "by",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=by"
+        },
+        {
+          "song_id": "jimin__be-mine",
+          "country": "by",
+          "position": 11,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=by"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "cl",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cl"
+        },
+        {
+          "song_id": "bts__come-over",
+          "country": "cl",
+          "position": 12,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cl"
+        },
+        {
+          "song_id": "bts__normal-korean-ver",
+          "country": "cl",
+          "position": 19,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cl"
+        },
+        {
+          "song_id": "bts__normal",
+          "country": "cr",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cr"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "cr",
+          "position": 9,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cr"
+        },
+        {
+          "song_id": "bts__come-over",
+          "country": "cr",
+          "position": 15,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=cr"
+        },
+        {
+          "song_id": "babymonster__moon",
+          "country": "ec",
+          "position": 4,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ec"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "hn",
+          "position": 13,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=hn"
+        },
+        {
+          "song_id": "bestie__love-options",
+          "country": "jp",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=jp"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "kg",
+          "position": 10,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kg"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "kh",
+          "position": 4,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kh"
+        },
+        {
+          "song_id": "jennie__less-than-a-lover",
+          "country": "kh",
+          "position": 19,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kh"
+        },
+        {
+          "song_id": "plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94",
+          "country": "kr",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "rescene__love-attack",
+          "country": "kr",
+          "position": 8,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "allday-project__crash",
+          "country": "kr",
+          "position": 10,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "jimin__who",
+          "country": "kr",
+          "position": 11,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "juniel__illa-illa",
+          "country": "kr",
+          "position": 12,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884",
+          "country": "kr",
+          "position": 14,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "nct-wish__i-spy",
+          "country": "kr",
+          "position": 15,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "plave__star-trace",
+          "country": "kr",
+          "position": 16,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "soyeon__i-m-gonna-toesa",
+          "country": "kr",
+          "position": 20,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=kr"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "la",
+          "position": 4,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=la"
+        },
+        {
+          "song_id": "jung-kook__seven",
+          "country": "lu",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=lu"
+        },
+        {
+          "song_id": "jung-kook__3d",
+          "country": "lu",
+          "position": 3,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=lu"
+        },
+        {
+          "song_id": "jung-kook__standing-next-to-you",
+          "country": "lu",
+          "position": 5,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=lu"
+        },
+        {
+          "song_id": "jung-kook-latto__seven",
+          "country": "mm",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=mm"
+        },
+        {
+          "song_id": "jung-kook__too-sad-to-dance",
+          "country": "mm",
+          "position": 9,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=mm"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "mm",
+          "position": 13,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=mm"
+        },
+        {
+          "song_id": "jung-kook-jack-harlow__3d",
+          "country": "mm",
+          "position": 17,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=mm"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "mn",
+          "position": 5,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=mn"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "np",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=np"
+        },
+        {
+          "song_id": "bts__normal",
+          "country": "np",
+          "position": 2,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=np"
+        },
+        {
+          "song_id": "bts__come-over",
+          "country": "np",
+          "position": 13,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=np"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "pa",
+          "position": 17,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=pa"
+        },
+        {
+          "song_id": "bts__we-are-bulletproof-the-eternal",
+          "country": "pe",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=pe"
+        },
+        {
+          "song_id": "bts__paldogangsan",
+          "country": "pe",
+          "position": 7,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=pe"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "pe",
+          "position": 11,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=pe"
+        },
+        {
+          "song_id": "bts__house-of-cards-full-length-edition",
+          "country": "pe",
+          "position": 14,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=pe"
+        },
+        {
+          "song_id": "jin__don-t-say-you-love-me",
+          "country": "ph",
+          "position": 5,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ph"
+        },
+        {
+          "song_id": "cortis__moneymoneymoney",
+          "country": "sa",
+          "position": 20,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=sa"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "sz",
+          "position": 19,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=sz"
+        },
+        {
+          "song_id": "bestie__love-options",
+          "country": "th",
+          "position": 14,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=th"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "th",
+          "position": 20,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=th"
+        },
+        {
+          "song_id": "the-weeknd-jennie-lily-rose-depp__one-of-the-girls",
+          "country": "tj",
+          "position": 20,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=tj"
+        },
+        {
+          "song_id": "jeon-soyeon__i-m-gonna-toesa-feat-kian84",
+          "country": "tw",
+          "position": 5,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=tw"
+        },
+        {
+          "song_id": "ateez__bad",
+          "country": "tw",
+          "position": 13,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=tw"
+        },
+        {
+          "song_id": "soyeon__i-m-gonna-toesa",
+          "country": "tw",
+          "position": 17,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=tw"
+        },
+        {
+          "song_id": "allday-project__crash",
+          "country": "tw",
+          "position": 19,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=tw"
+        },
+        {
+          "song_id": "bts__swim",
+          "country": "ve",
+          "position": 1,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ve"
+        },
+        {
+          "song_id": "bts__normal",
+          "country": "ve",
+          "position": 12,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ve"
+        },
+        {
+          "song_id": "bestie__love-options",
+          "country": "vn",
+          "position": 4,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=vn"
+        },
+        {
+          "song_id": "jung-kook__seven",
+          "country": "vn",
+          "position": 13,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=vn"
+        },
+        {
+          "song_id": "illit__billyeoon-goyangi-do-the-dance",
+          "country": "ai",
+          "position": 10,
+          "source_date": "2026-10-17",
+          "source_url": "https://rotation.today/map?market=ai"
+        }
+      ]
+    }
+  ],
+  "latest_attempt": {
+    "attempted_at": "2026-10-18T05:03:30Z",
+    "status": "incomplete",
+    "source_date": "2026-10-17",
+    "expected_country_count": 165,
+    "captured_country_count": 15,
+    "error_code": null
+  }
+}

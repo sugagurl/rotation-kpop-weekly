@@ -1,0 +1,406 @@
+{
+  "artists": [
+    {
+      "id": "bts",
+      "name": "BTS",
+      "aliases": [
+        "BTS"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://bts.ibighit.com/eng/profile/"
+    },
+    {
+      "id": "jungkook",
+      "name": "Jung Kook",
+      "aliases": [
+        "Jung Kook"
+      ],
+      "roster_id": "bts-jungkook",
+      "evidence_url": "https://bts.ibighit.com/eng/profile/"
+    },
+    {
+      "id": "jimin",
+      "name": "Jimin",
+      "aliases": [
+        "Jimin"
+      ],
+      "roster_id": "bts-jimin",
+      "evidence_url": "https://bts.ibighit.com/eng/profile/"
+    },
+    {
+      "id": "jin",
+      "name": "Jin",
+      "aliases": [
+        "Jin"
+      ],
+      "roster_id": "bts-jin",
+      "evidence_url": "https://bts.ibighit.com/eng/profile/"
+    },
+    {
+      "id": "v",
+      "name": "V",
+      "aliases": [
+        "V"
+      ],
+      "roster_id": "bts-v",
+      "evidence_url": "https://bts.ibighit.com/kor/discography/v/"
+    },
+    {
+      "id": "jennie",
+      "name": "JENNIE",
+      "aliases": [
+        "JENNIE"
+      ],
+      "roster_id": "blackpink-jennie",
+      "evidence_url": "https://www.jenn.ie/"
+    },
+    {
+      "id": "allday-project",
+      "name": "ALLDAY PROJECT",
+      "aliases": [
+        "ALLDAY PROJECT"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://theblacklabel.com/"
+    },
+    {
+      "id": "ateez",
+      "name": "ATEEZ",
+      "aliases": [
+        "ATEEZ"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://ateez.kqent.com/"
+    },
+    {
+      "id": "babymonster",
+      "name": "BABYMONSTER",
+      "aliases": [
+        "BABYMONSTER"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://yg-babymonster-official.jp/"
+    },
+    {
+      "id": "cortis",
+      "name": "CORTIS",
+      "aliases": [
+        "CORTIS"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://ibighit.com/legacy/cortis/color-outside-the-lines-en.html"
+    },
+    {
+      "id": "illit",
+      "name": "ILLIT",
+      "aliases": [
+        "ILLIT"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://beliftlab.com/artist/profile/ILLIT"
+    },
+    {
+      "id": "plave",
+      "name": "PLAVE",
+      "aliases": [
+        "PLAVE"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://www.plave-official.com/"
+    },
+    {
+      "id": "rescene",
+      "name": "RESCENE",
+      "aliases": [
+        "RESCENE"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://www.rescene-official.com/"
+    },
+    {
+      "id": "nct-wish",
+      "name": "NCT WISH",
+      "aliases": [
+        "NCT WISH"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://nct-wish.jp/"
+    },
+    {
+      "id": "bestie",
+      "name": "BESTie",
+      "aliases": [
+        "BESTie"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://rotation.today/song/bestie__love-options"
+    },
+    {
+      "id": "juniel",
+      "name": "Juniel",
+      "aliases": [
+        "Juniel"
+      ],
+      "roster_id": null,
+      "evidence_url": "https://rotation.today/song/juniel__illa-illa"
+    },
+    {
+      "id": "soyeon",
+      "name": "SOYEON",
+      "aliases": [
+        "SOYEON",
+        "JEON SOYEON",
+        "소연 (SOYEON)"
+      ],
+      "roster_id": "i-dle-soyeon",
+      "evidence_url": "https://www.youtube.com/watch?v=OOvyHpNmGD8"
+    }
+  ],
+  "approved_recordings": {
+    "jung-kook__seven": {
+      "title": "Seven",
+      "credits": "Jung Kook",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "bts__please": {
+      "title": "Please",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "v__winter-ahead-with-park-hyo-shin": {
+      "title": "Winter Ahead (with PARK HYO SHIN)",
+      "credits": "V",
+      "artist_ids": [
+        "v"
+      ]
+    },
+    "bts__normal-korean-ver": {
+      "title": "NORMAL (Korean Ver.)",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "bts__swim": {
+      "title": "SWIM",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "bts__normal": {
+      "title": "NORMAL",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "v__winter-ahead": {
+      "title": "Winter Ahead",
+      "credits": "V",
+      "artist_ids": [
+        "v"
+      ]
+    },
+    "jimin__who": {
+      "title": "Who",
+      "credits": "Jimin",
+      "artist_ids": [
+        "jimin"
+      ]
+    },
+    "jimin__be-mine": {
+      "title": "Be Mine",
+      "credits": "Jimin",
+      "artist_ids": [
+        "jimin"
+      ]
+    },
+    "bts__come-over": {
+      "title": "Come Over",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "babymonster__moon": {
+      "title": "MOON",
+      "credits": "BABYMONSTER",
+      "artist_ids": [
+        "babymonster"
+      ]
+    },
+    "bestie__love-options": {
+      "title": "Love Options",
+      "credits": "BESTie",
+      "artist_ids": [
+        "bestie"
+      ]
+    },
+    "the-weeknd-jennie-lily-rose-depp__one-of-the-girls": {
+      "title": "One Of The Girls",
+      "credits": "The Weeknd, JENNIE & Lily Rose Depp",
+      "artist_ids": [
+        "jennie"
+      ]
+    },
+    "jennie__less-than-a-lover": {
+      "title": "Less than a Lover",
+      "credits": "JENNIE",
+      "artist_ids": [
+        "jennie"
+      ]
+    },
+    "plave__%EC%9D%B4-%EB%B0%A4%EC%9D%84-%EB%B9%8C%EB%A0%A4-%EB%A7%90%ED%95%B4%EC%9A%94": {
+      "title": "이 밤을 빌려 말해요",
+      "credits": "PLAVE",
+      "artist_ids": [
+        "plave"
+      ]
+    },
+    "rescene__love-attack": {
+      "title": "LOVE ATTACK",
+      "credits": "RESCENE",
+      "artist_ids": [
+        "rescene"
+      ]
+    },
+    "allday-project__crash": {
+      "title": "CRASH",
+      "credits": "ALLDAY PROJECT",
+      "artist_ids": [
+        "allday-project"
+      ]
+    },
+    "juniel__illa-illa": {
+      "title": "illa illa",
+      "credits": "Juniel",
+      "artist_ids": [
+        "juniel"
+      ]
+    },
+    "%EC%86%8C%EC%97%B0-soyeon__%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC-narr-%EA%B8%B0%EC%95%8884": {
+      "title": "퇴사할게여 (Narr. 기안84)",
+      "credits": "소연 (SOYEON)",
+      "artist_ids": [
+        "soyeon"
+      ]
+    },
+    "nct-wish__i-spy": {
+      "title": "I SPY",
+      "credits": "NCT WISH",
+      "artist_ids": [
+        "nct-wish"
+      ]
+    },
+    "plave__star-trace": {
+      "title": "Star Trace",
+      "credits": "PLAVE",
+      "artist_ids": [
+        "plave"
+      ]
+    },
+    "soyeon__i-m-gonna-toesa": {
+      "title": "I’m gonna TOESA",
+      "credits": "SOYEON",
+      "artist_ids": [
+        "soyeon"
+      ]
+    },
+    "jung-kook__3d": {
+      "title": "3D",
+      "credits": "Jung Kook",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "jung-kook__standing-next-to-you": {
+      "title": "Standing Next to You",
+      "credits": "Jung Kook",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "jung-kook-latto__seven": {
+      "title": "Seven",
+      "credits": "Jung Kook & Latto",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "jung-kook__too-sad-to-dance": {
+      "title": "Too Sad to Dance",
+      "credits": "Jung Kook",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "jung-kook-jack-harlow__3d": {
+      "title": "3D",
+      "credits": "Jung Kook & Jack Harlow",
+      "artist_ids": [
+        "jungkook"
+      ]
+    },
+    "bts__we-are-bulletproof-the-eternal": {
+      "title": "We are Bulletproof : The Eternal",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "bts__paldogangsan": {
+      "title": "Paldogangsan",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "bts__house-of-cards-full-length-edition": {
+      "title": "House of Cards (Full Length Edition)",
+      "credits": "BTS",
+      "artist_ids": [
+        "bts"
+      ]
+    },
+    "jin__don-t-say-you-love-me": {
+      "title": "Don’t Say You Love Me",
+      "credits": "Jin",
+      "artist_ids": [
+        "jin"
+      ]
+    },
+    "cortis__moneymoneymoney": {
+      "title": "MONEYMONEYMONEY",
+      "credits": "CORTIS",
+      "artist_ids": [
+        "cortis"
+      ]
+    },
+    "jeon-soyeon__i-m-gonna-toesa-feat-kian84": {
+      "title": "I’m gonna TOESA (feat. Kian84)",
+      "credits": "JEON SOYEON",
+      "artist_ids": [
+        "soyeon"
+      ]
+    },
+    "ateez__bad": {
+      "title": "BAD",
+      "credits": "ATEEZ",
+      "artist_ids": [
+        "ateez"
+      ]
+    },
+    "illit__billyeoon-goyangi-do-the-dance": {
+      "title": "Billyeoon Goyangi (Do the Dance)",
+      "credits": "ILLIT",
+      "artist_ids": [
+        "illit"
+      ]
+    }
+  }
+}
