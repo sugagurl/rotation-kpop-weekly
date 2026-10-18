@@ -1,0 +1,1 @@
+{"name":"rotation-kpop-weekly","private":true,"type":"module","scripts":{"probe":"node probe.mjs"},"dependencies":{"playwright":"1.61.1"}}
