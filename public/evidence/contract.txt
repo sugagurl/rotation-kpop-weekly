@@ -1,4 +1,4 @@
-ROTATION SOURCE-WIDE EVIDENCE V1
+ROTATION SOURCE-WIDE EVIDENCE V1.1 (schema_version remains 1)
 POST https://rotation-weekly-data.vercel.app/api/evidence
 Content-Type: application/json
 X-Rotation-Signature: Ed25519 base64 signature of EXACT UTF-8 request bytes.
@@ -7,9 +7,11 @@ Schema: /evidence/contract.schema.json . No storage/game/Aura credentials are ne
 
 Envelope: schema_version:1, producer:"muse-rotation-evidence", batch_id (lowercase
 letters/digits/hyphens,5–96chars), phase:"backfill"|"daily"|"weekly_review",
-captured_at ISO UTC, pages[], review_items[] (empty except weekly_review).
+captured_at ISO UTC from an ACTUAL runtime clock command, pages[], review_items[] (empty except weekly_review).
 Every batch ID is immutable. Exact bytes replay returns already_saved. A changed
 batch with the same ID is rejected. Save request bytes and signature in workspace.
+Never guess or round a packaging time into the future. Build the envelope timestamp
+after included acquisitions. Future times over5minutes are rejected (FUTURE_CAPTURE).
 Maximum4MiB,40pages,1200observations/page. Publish small checkpointed batches.
 
 Optional campaign:{id,edition_dates:[YYYY-MM-DD,...]} establishes the backfill
@@ -47,9 +49,15 @@ peak_rank peak_market records_charted current_records bpm alternate_bpm key
 alternate_key key_confidence tempo_confidence duration_seconds energy shape
 peak_seconds brightness low_end_percentage measurement_date relationship
 credited_name citation_url recording_id entity_name entity_type sample_count
-matched_count unmatched_count largest_metric date_range collection_id
+matched_count unmatched_count markets_asked best_rank rank_7_days breaking_in largest_metric date_range collection_id
 collection_title curator track_position method_version applies_from rule_name
 rule_value expected_rows observed_rows
+Keep native metrics: markets_asked is NOT observed/current/historical country reach;
+best_rank is the best rank in that source view, NOT a historical peak. Keep composite
+rank_7_days strings verbatim; they do not reconstruct continuous daily positions.
+Keep breaking_in as source-flagged markets, distinct from actual chart positions.
+Fourth-axis observed_market_count/peak_rank mappings are rejected as ambiguous.
+
 Never send lyrics, hook text, copied articles/HTML, audio, cookies, credentials,
 personal user data, or game ratings/rarity/outcomes. Titles can support existing
 SUGA lyric/hook lookup; this is not permission to copy protected lyrics.
@@ -94,8 +102,25 @@ X-Rotation-Signature: base64 Ed25519 signature of EXACT message
 rotation-evidence-read-v1\n<batch_id>\n<unix_seconds>
 where \n is a REAL newline. Valid for5minutes. Response sha256 + original batch.
 Verify raw batch hash against the saved request and deep-equal the parsed batch.
+archive_status=active is current evidence; superseded bodies are audit-only and
+list replaced_by IDs; unindexed bodies alone do NOT prove committed delivery.
 No signature/expired request =>401. Do not send key material in URL or request.
 
 Keep /api/archive and frozen first week untouched by DAILY/BACKFILL ingestion.
 Only the existing Saturday map producer uses /api/archive under its old contract.
 No live subdomain release, game changes, Aura DB mutation, email or Telegram.
+
+IMMUTABLE CORRECTIONS (backfill/daily only)
+Optional envelope replaces_batches:[existing_capture_batch_id,...] (max10).
+Use a NEW batch_id and actual packaging time for a corrected extraction. Preserve
+all original source page URLs/dates/capture times/row counts/status and all original
+observation identities (project/kind/subject/title/credits/chart_name); corrected
+fact fields may change. Do not drop records or re-date the source. The receiver
+checks full coverage against the original private body. Only active capture batches
+can be replaced; no branches from an already-replaced version; weekly reviews and
+the separate frozen map archive cannot be replaced here. Original bytes remain
+private and replayable; active public counts exclude superseded captures.
+A failed/rejected request stays as forensic evidence. Correct it under a new ID;
+never overwrite the accepted or saved rejected request file.
+Errors return safe stage/reason, including FUTURE_CAPTURE or
+SOURCE_METRIC_MAPPING_REJECTED. Do not guess why a request failed.
