@@ -8,8 +8,12 @@
     "test": "node --test archive.test.mjs receiver.test.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "2.8.2",
     "playwright": "1.61.1",
-    "zod": "4.4.3",
-    "@vercel/blob": "2.8.2"
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "typescript": "5.9.3"
   }
 }

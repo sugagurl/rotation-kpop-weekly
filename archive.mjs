@@ -1,4 +1,4 @@
-import {readHostedFeed} from './validate-feed.ts';
+import {readHostedFeed} from './validate-feed.mjs';
 import {createHash} from 'node:crypto';
 export const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 export function mergePacket(saved,raw,now=new Date()){
