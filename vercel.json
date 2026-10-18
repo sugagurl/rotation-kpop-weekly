@@ -6,6 +6,10 @@
     "api/archive.ts": {
       "maxDuration": 60,
       "includeFiles": "producer-public-key.pem"
+    },
+    "api/evidence.ts": {
+      "maxDuration": 60,
+      "includeFiles": "producer-public-key.pem"
     }
   }
 }

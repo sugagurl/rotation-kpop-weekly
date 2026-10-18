@@ -1,0 +1,101 @@
+ROTATION SOURCE-WIDE EVIDENCE V1
+POST https://rotation-weekly-data.vercel.app/api/evidence
+Content-Type: application/json
+X-Rotation-Signature: Ed25519 base64 signature of EXACT UTF-8 request bytes.
+Use the existing private producer key ONLY in Muse workspace. Never export it.
+Schema: /evidence/contract.schema.json . No storage/game/Aura credentials are needed.
+
+Envelope: schema_version:1, producer:"muse-rotation-evidence", batch_id (lowercase
+letters/digits/hyphens,5–96chars), phase:"backfill"|"daily"|"weekly_review",
+captured_at ISO UTC, pages[], review_items[] (empty except weekly_review).
+Every batch ID is immutable. Exact bytes replay returns already_saved. A changed
+batch with the same ID is rejected. Save request bytes and signature in workspace.
+Maximum4MiB,40pages,1200observations/page. Publish small checkpointed batches.
+
+Optional campaign:{id,edition_dates:[YYYY-MM-DD,...]} establishes the backfill
+manifest from EXPOSED /archive links. Send it on the initial index batch. Same
+campaign cannot change target dates; new discoveries use a new campaign ID.
+
+Each page:
+{url,family,source_date:YYYY-MM-DD|null,captured_at:ISO,acquisition?,status,
+ observed_rows:integer,expected_rows:integer|null,observations:[]}
+family: index(/archive,/artist,/dig,/culture,/pressings), chart(/ or/chart),
+edition(/YYYY-MM-DD), artist(/artist/*), song(/song/*), map(/map), dig(/dig/*),
+culture(/culture/*), pressing(/pressing/*), methodology(/methodology,/colophon),
+changelog(/changelog), analyzer(/analyzer*). All URLs must be https://rotation.today.
+Read only linked public pages, never invent hidden routes. Keep SOURCE dates,
+measurement dates and actual acquisition timestamps distinct. Source date null
+when no date is displayed; never use retrieval date as a guessed source date.
+Optional acquisition: live_public|preserved_public_capture. Preserve original acquisition
+time for existing captures; do not relabel a saved capture as a fresh read.
+status: captured|partial|blocked|unavailable|not_applicable. If25of50are shown,
+observed_rows25/expected_rows50/status partial. Partial editions advance visited
+progress but are never called complete. Blocked/unavailable/not_applicable pages
+have observed_rows0 and NO observations. Do not bypass a restriction.
+
+Each observation:
+{project:"hyperidol"|"suga",scope:"kpop"|"broader_music"|"unresolved",
+ kind,subject,facts:{...},classification?}
+kind: chart_entry|recording|artist|country_history|city_pickup|
+ musical_measurement|credit|culture_context|editorial|methodology.
+Facts are flat scalar values or arrays of scalars, max600characters/string.
+Allowed keys ONLY:
+chart_name rank previous_rank move source_score country city city_count
+source_platforms title artist_name credits isrc release_date released_year
+source_slug current_market_count observed_market_count first_seen latest_chart_date
+peak_rank peak_market records_charted current_records bpm alternate_bpm key
+alternate_key key_confidence tempo_confidence duration_seconds energy shape
+peak_seconds brightness low_end_percentage measurement_date relationship
+credited_name citation_url recording_id entity_name entity_type sample_count
+matched_count unmatched_count largest_metric date_range collection_id
+collection_title curator track_position method_version applies_from rule_name
+rule_value expected_rows observed_rows
+Never send lyrics, hook text, copied articles/HTML, audio, cookies, credentials,
+personal user data, or game ratings/rarity/outcomes. Titles can support existing
+SUGA lyric/hook lookup; this is not permission to copy protected lyrics.
+
+Hyperidol: scope MUST kpop. Every observation must include facts.credits (string
+or array joined with comma-space) or facts.artist_name, EXACTLY equal to
+classification.named_credit. Required classification:
+{named_credit,artists:[{id,name,identity_source:https_official_evidence_url}]}
+Every named artist must occur as a bounded name in the published credit. Existing
+reviewed identities use the established exact IDs/aliases; NEW verified K-pop
+identities are allowed with primary evidence outside rotation.today. No invented
+app profile mapping. Truly ambiguous identities stay unresolved in suga/held files,
+never Hyperidol. Creation-side musical_measurement, editorial and methodology
+observations always belong to suga. Shared method/page metadata needs no Hyperidol
+observation. Capture broad public musical facts in suga; eligible named K-pop
+facts can also be included as Hyperidol observations, one evidence family.
+Do not infer lifelong popularity or continuous presence from first-seen/peak.
+Current market count, observed historical reach and map top20 count differ.
+
+Weekly review_items (max12 total, suggestions only):
+{project,subject,kind,summary,before:null|facts,after:facts,evidence_indexes:[...]}
+Indexes refer to flattened observations across pages in THIS batch. Include the
+original captured page timestamps/dates when packaging older evidence. Every
+referenced observation must match project/subject/kind. after MUST equal a
+referenced facts object; non-null before must also equal one. Equal before/after
+is rejected. Same proposed change is deduplicated. No publication or game write.
+The server groups review batches by latest Pacific Saturday and exposes only
+K-pop suggestions in public status; SUGA suggestions remain in the private batch.
+Package a concise private SUGA review in Muse's weekly delivery chat (no public
+artifact Share step, no Telegram). No copied prose/lyrics in review summaries.
+
+Response: state, batch_id, sha256 (of EXACT raw UTF-8 request bytes), page_count,
+observations, summary. On409 index contention retry identical saved bytes (max3);
+on any other rejection inspect the error and do not create duplicate jobs.
+An accepted batch has been read back from private storage.
+GET /api/evidence: public SAFE counts, visited/partial archive progress and K-pop
+review suggestions only. No broad SUGA records or raw capture bodies are public.
+
+Private fresh GET /api/evidence?batch=<batch_id>
+X-Rotation-Timestamp: current Unix seconds, decimal10digits
+X-Rotation-Signature: base64 Ed25519 signature of EXACT message
+rotation-evidence-read-v1\n<batch_id>\n<unix_seconds>
+where \n is a REAL newline. Valid for5minutes. Response sha256 + original batch.
+Verify raw batch hash against the saved request and deep-equal the parsed batch.
+No signature/expired request =>401. Do not send key material in URL or request.
+
+Keep /api/archive and frozen first week untouched by DAILY/BACKFILL ingestion.
+Only the existing Saturday map producer uses /api/archive under its old contract.
+No live subdomain release, game changes, Aura DB mutation, email or Telegram.
