@@ -16,7 +16,9 @@ Status: isolated private storage connected with explicit user approval. First si
 Muse delivery is visible through fresh GET; the frozen complete edition is unchanged.
 The160/165 verification attempt is blocked/incomplete. Exact replay returns already_saved
 and preserves the feed. The saved Saturday07:00 America/Los_Angeles cloud job is active;
-its first scheduler-owned test run is still running, not yet verified.15 focused tests pass. The earlier browser
+its first scheduler-owned test stalled after index enumeration with zero new market files.
+A corrected saved-job replay test is queued; unattended-path verification is still pending.
+15 focused tests pass. The earlier browser
 artifact relay is retired: Muse requires a new human Share approval for every public
 artifact version. Its manual probe workflow is retained only as an evidence check and
 has no schedule. No live Hyperidol domain or Telegram publication is included here.
