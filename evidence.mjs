@@ -70,11 +70,11 @@ export function addToIndex(prior,b,sha){
 }
 export function publicSummary(index){
  const i=index??{batches:[],campaigns:[]}, captures=i.batches.filter(b=>b.phase!=='weekly_review');
- const targetDates=new Set(i.campaigns.flatMap(c=>c.edition_dates));const visited=new Set(), partial=new Set();const families={};const counts={hyperidol:0,suga:0};let blocked=0;
- for(const b of captures){for(const project of Object.keys(counts))counts[project]+=b.counts[project];for(const p of b.pages){families[p.family]=(families[p.family]??0)+1;if(p.status==='blocked'||p.status==='unavailable')blocked++;if(p.family==='edition'&&['captured','partial'].includes(p.status)){visited.add(p.source_date);if(p.status==='partial')partial.add(p.source_date)}}}
+ const targetDates=new Set(i.campaigns.flatMap(c=>c.edition_dates));const visited=new Set(), partial=new Set();const families={},latestPages=new Map();const counts={hyperidol:0,suga:0};let blocked=0;
+ for(const b of captures){for(const project of Object.keys(counts))counts[project]+=b.counts[project];for(const p of b.pages){const old=latestPages.get(p.url);if(!old||Date.parse(p.captured_at)>=Date.parse(old.captured_at))latestPages.set(p.url,p);families[p.family]=(families[p.family]??0)+1;if(p.status==='blocked'||p.status==='unavailable')blocked++;if(p.family==='edition'&&['captured','partial'].includes(p.status)){visited.add(p.source_date);if(p.status==='partial')partial.add(p.source_date)}}}
  const latestReviewWeek=i.batches.filter(b=>b.phase==='weekly_review').map(b=>b.review_week).sort().at(-1)??null;
  const reviews=new Map(),sugaReviews=new Set();for(const b of i.batches.filter(b=>b.phase==='weekly_review'&&b.review_week===latestReviewWeek))for(const r of b.review_items){if(r.project==='hyperidol')reviews.set(r.id,{id:r.id,subject:r.subject,kind:r.kind,summary:r.summary,before:r.before,after:r.after,evidence:r.evidence??[],packaged_at:b.captured_at,status:'suggestion'});else sugaReviews.add(r.id)}
- return {schema_version:1,status:i.batches.length?'receiving':'waiting_for_first_delivery',source_family:'rotation',latest_delivery:i.batches.map(b=>b.captured_at).sort().at(-1)??null,batches:i.batches.length,capture_batches:captures.length,observation_snapshots:counts,page_captures_by_family:families,blocked_page_attempts:blocked,backfill:{expected_editions:targetDates.size,visited_editions:[...visited].filter(d=>targetDates.has(d)).length,partial_editions:[...partial].filter(d=>targetDates.has(d)).length,first_edition:[...visited].filter(d=>targetDates.has(d)).sort()[0]??null,last_edition:[...visited].filter(d=>targetDates.has(d)).sort().at(-1)??null},review_week:latestReviewWeek,review_items:[...reviews.values()].slice(-12),suga_review_items:sugaReviews.size,live_changes:'held',game_writes:false};
+ return {schema_version:1,status:i.batches.length?'receiving':'waiting_for_first_delivery',source_family:'rotation',latest_delivery:i.batches.map(b=>b.captured_at).sort().at(-1)??null,batches:i.batches.length,capture_batches:captures.length,observation_snapshots:counts,page_captures_by_family:families,blocked_page_attempts:blocked,unresolved_blocked_pages:[...latestPages.values()].filter(p=>['blocked','unavailable'].includes(p.status)).length,backfill:{expected_editions:targetDates.size,visited_editions:[...visited].filter(d=>targetDates.has(d)).length,partial_editions:[...partial].filter(d=>targetDates.has(d)).length,first_edition:[...visited].filter(d=>targetDates.has(d)).sort()[0]??null,last_edition:[...visited].filter(d=>targetDates.has(d)).sort().at(-1)??null},review_week:latestReviewWeek,review_items:[...reviews.values()].slice(-12),suga_review_items:sugaReviews.size,live_changes:'held',game_writes:false};
 }
 async function readBody(request,max){let size=0;const chunks=[];const reader=request.body?.getReader();if(!reader)throw Error('EMPTY_BODY');try{while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>max){await reader.cancel();throw Error('BODY_TOO_LARGE')}chunks.push(value)}}finally{reader.releaseLock()}return Buffer.concat(chunks)}
 export function makeEvidenceReceiver({publicKey,store,knownArtists=[],now=()=>new Date()}){
@@ -91,17 +91,18 @@ export function makeEvidenceReceiver({publicKey,store,knownArtists=[],now=()=>ne
   if(request.headers.get('content-type')?.split(';')[0]!=='application/json')return json({error:'JSON_REQUIRED'},415);
   const sig=request.headers.get('x-rotation-signature')??'';if(!/^[A-Za-z0-9+/]{86}==$/.test(sig))return json({error:'SIGNATURE_REQUIRED'},401);
   if(Number(request.headers.get('content-length')??0)>4*1024*1024)return json({error:'BODY_TOO_LARGE'},413);
+  let stage='validation';
   try{
    const body=await readBody(request,4*1024*1024);if(!verify(null,body,key,Buffer.from(sig,'base64')))return json({error:'INVALID_SIGNATURE'},401);
    const raw=body.toString('utf8'),b=validateBatch(JSON.parse(raw),{now:now(),knownArtists}),sha=digest(raw);
    if(store.available===false)return json({error:'STORAGE_NOT_CONNECTED'},503);
-   const prior=await store.loadIndex(),existing=await store.loadBatch(b.batch_id);
+   stage='index_read';const prior=await store.loadIndex(),existing=await store.loadBatch(b.batch_id);
    if(existing&&(existing.sha256!==sha||digest(existing.body_utf8)!==sha))throw Error('BATCH_ID_CONFLICT');
-   const next=addToIndex(prior?.value??null,b,sha);
-   if(!existing)await store.saveBatch(b.batch_id,{sha256:sha,body_utf8:raw});
-   const readback=await store.loadBatch(b.batch_id);if(!readback||readback.sha256!==sha||digest(readback.body_utf8)!==sha)throw Error('BATCH_READBACK_FAILED');
-   const duplicate=next===prior?.value;if(!duplicate)await store.saveIndex(next,prior?.etag??null);
+   stage='index_validation';const next=addToIndex(prior?.value??null,b,sha);
+   stage='batch_write';if(!existing)await store.saveBatch(b.batch_id,{sha256:sha,body_utf8:raw});
+   stage='batch_readback';const readback=await store.loadBatch(b.batch_id);if(!readback||readback.sha256!==sha||digest(readback.body_utf8)!==sha)throw Error('BATCH_READBACK_FAILED');
+   stage='index_commit';const duplicate=next===prior?.value;if(!duplicate)await store.saveIndex(next,prior?.etag??null);
    return json({state:duplicate?'already_saved':'saved',batch_id:b.batch_id,sha256:sha,page_count:b.pages.length,observations:observationList(b).length,summary:publicSummary(next)});
-  }catch(error){const code=String(error?.message??'REJECTED');if(/BODY_TOO_LARGE/.test(code))return json({error:'BODY_TOO_LARGE'},413);if(/CONFLICT|Precondition|already exists|BlobPrecondition/i.test(code))return json({error:'ARCHIVE_CONFLICT'},409);return json({error:'EVIDENCE_OR_STORAGE_REJECTED'},400)}
+  }catch(error){const code=String(error?.message??'REJECTED');if(/BODY_TOO_LARGE/.test(code))return json({error:'BODY_TOO_LARGE'},413);if(/CONFLICT|Precondition|already exists|BlobPrecondition/i.test(code))return json({error:'ARCHIVE_CONFLICT',stage},409);return json({error:'EVIDENCE_OR_STORAGE_REJECTED'},400)}
  };
 }

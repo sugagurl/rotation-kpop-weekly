@@ -22,7 +22,7 @@ and deep-equal readback, no human approval, no new week or packet mutation. The 
 job's NEW-week capture/classification/append path has not yet run; first scheduled
 exercise is October24. Independent source verification read160/165 and remains
 blocked/incomplete, preserving the original frozen complete edition.
-32 focused tests pass. The old job is disabled for future fires, not deleted; its original
+33 focused tests pass. The old job is disabled for future fires, not deleted; its original
 full-capture parent parked while read-only children remained in flight. Its recovery
 was canceled before execution. Prior v2 test0353f9 stopped safely on its obsolete
 daily-date guard without a POST. Exact records and final receipt are kept in the local
