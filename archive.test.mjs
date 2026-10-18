@@ -15,3 +15,8 @@ test('new recordings and verified unrouted artists can enter future weeks withou
  const result=mergePacket(base,next,new Date('2026-10-24T18:00:00Z'));assert.equal(result.weeks.at(-1).songs.length,2);assert.equal(hash(result.weeks[0]),hash(frozen));
  week.artists[1].roster_id='invented-route';assert.throws(()=>mergePacket(base,next,new Date('2026-10-24T18:00:00Z')),/UNREVIEWED_ARTIST_ROUTE/);
 });
+test('a Saturday edition can preserve Friday source dates and rejects a weekday edition',()=>{
+ const next=structuredClone(base),week=structuredClone(frozen);week.edition_date='2026-10-24';week.source_date='2026-10-23';week.captured_at='2026-10-24T16:00:00Z';week.entries.forEach(e=>e.source_date=week.source_date);next.weeks.push(week);next.latest_complete=week;next.latest_attempt={attempted_at:week.captured_at,status:'complete',source_date:week.source_date,expected_country_count:165,captured_country_count:165,error_code:null};
+ const clock=new Date('2026-10-24T18:00:00Z');const merged=mergePacket(base,next,clock);assert.equal(merged.weeks.at(-1).edition_date,'2026-10-24');assert.equal(merged.weeks.at(-1).source_date,'2026-10-23');assert.equal(merged.weeks.at(-1).entries[0].source_date,'2026-10-23');
+ week.edition_date='2026-10-23';assert.throws(()=>mergePacket(base,next,clock),/NOT_SATURDAY_EDITION/);
+});
