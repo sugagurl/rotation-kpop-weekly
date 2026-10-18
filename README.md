@@ -12,20 +12,23 @@ feed uses ETag conditional writes. Storage is private for fresh origin reads; th
 API exposes only the validated K-pop packet. Failed/blocked capture attempts preserve
 all complete saved editions.
 
-Status: isolated private storage connected with explicit user approval. First signed
-Muse delivery is visible through fresh GET; the frozen complete edition is unchanged.
-The160/165 verification attempt is blocked/incomplete. Exact replay returns already_saved
-and preserves the feed. The saved Saturday07:00 America/Los_Angeles cloud job is active;
-its original full-capture children progressed; the old scheduler record is now parked.
-Disk silence did not prove a stall. Replacement job rotation-weekly-capture-v2 is the only enabled future
-schedule, with the current calendar-corrected b16386 replay test in progress. The prior0353f9
-test stopped safely on an advanced daily source date and performed no POST. The old job is disabled
-for future fires; its in-flight and queued runs are preserved, not canceled. Unattended-path
-verification is pending a genuine saved-job delivery receipt.
-16 focused tests pass. The earlier browser
-artifact relay is retired: Muse requires a new human Share approval for every public
-artifact version. Its manual probe workflow is retained only as an evidence check and
-has no schedule. No live Hyperidol domain or Telegram publication is included here.
+Status: dedicated private storage connected with explicit user approval. Direct signed
+Muse delivery and exact replay preserve the frozen complete edition. The saved job
+rotation-weekly-capture-v2 is the only enabled future Saturday07:00 America/Los_Angeles
+schedule. Its final b16386 test fc152c00 succeeded at2026-10-18T09:29:02Z: already-saved
+Saturday short-circuit, unchanged signedPOST200/already_saved, independent freshGET200
+and deep-equal readback, no human approval, no new week or packet mutation. The saved
+job's NEW-week capture/classification/append path has not yet run; first scheduled
+exercise is October24. Independent source verification read160/165 and remains
+blocked/incomplete, preserving the original frozen complete edition.
+16 focused tests pass. The old job is disabled for future fires, not deleted; its original
+full-capture parent parked while read-only children remained in flight. Its recovery
+was canceled before execution. Prior v2 test0353f9 stopped safely on its obsolete
+daily-date guard without a POST. Exact records and final receipt are kept in the local
+handoff, not exposed as false complete-capture evidence.
+The browser artifact relay is retired (human Share required per version); its manual
+probe workflow has no schedule. No live Hyperidol domain or Telegram publication is
+included here.
 
 `npm test` checks signed requests, replay, immutable history, corrupt objects, future
 editions, size bounds, CAS conflicts and storage failure. Source acquisition must stop
