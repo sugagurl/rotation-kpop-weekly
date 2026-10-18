@@ -1,4 +1,4 @@
-ROTATION SOURCE-WIDE EVIDENCE V1.1 (schema_version remains 1)
+ROTATION SOURCE-WIDE EVIDENCE V1.2 (schema_version remains 1)
 POST https://rotation-weekly-data.vercel.app/api/evidence
 Content-Type: application/json
 X-Rotation-Signature: Ed25519 base64 signature of EXACT UTF-8 request bytes.
@@ -110,16 +110,23 @@ Keep /api/archive and frozen first week untouched by DAILY/BACKFILL ingestion.
 Only the existing Saturday map producer uses /api/archive under its old contract.
 No live subdomain release, game changes, Aura DB mutation, email or Telegram.
 
-IMMUTABLE CORRECTIONS (backfill/daily only)
+IMMUTABLE CORRECTIONS
 Optional envelope replaces_batches:[existing_capture_batch_id,...] (max10).
 Use a NEW batch_id and actual packaging time for a corrected extraction. Preserve
 all original source page URLs/dates/capture times/row counts/status and all original
 observation identities (project/kind/subject/title/credits/chart_name); corrected
 fact fields may change. Do not drop records or re-date the source. The receiver
-checks full coverage against the original private body. Only active capture batches
-can be replaced; no branches from an already-replaced version; weekly reviews and
-the separate frozen map archive cannot be replaced here. Original bytes remain
-private and replayable; active public counts exclude superseded captures.
+checks full coverage against the original private body. Only active batches can be replaced; no branches from an already-replaced version.
+Capture phases can replace captures. A weekly_review may replace ONLY another
+weekly_review in the SAME Pacific review week, retaining EVERY original review
+identity (project/subject/kind) and full source-page/observation coverage. Corrected
+uncertain fields may be omitted and the summary must explain the hold plainly.
+Superseded proposals disappear from the active review; original bodies remain audit
+history. Never overwrite an original request file. The SEPARATE frozen map archive
+cannot be changed here. If replaying a saved request that is now superseded, follow
+replaced_by to its active revision and use that exact local request file; never
+reconstruct its bytes from parsed JSON or treat an old replay as current evidence. Original bytes remain
+private and replayable; active public counts/review exclude superseded batches.
 A failed/rejected request stays as forensic evidence. Correct it under a new ID;
 never overwrite the accepted or saved rejected request file.
 Errors return safe stage/reason, including FUTURE_CAPTURE or
